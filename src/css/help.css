@@ -1,0 +1,14 @@
+.help-content {
+  margin: 0 3rem;
+  font-size: 1.75rem;
+}
+
+.help-feature,
+.help-list {
+  display: flex;
+  justify-content: center;
+}
+
+.help-list {
+  text-align: left;
+}

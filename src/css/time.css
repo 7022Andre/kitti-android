@@ -1,0 +1,16 @@
+.input {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hour-field {
+  margin-right: 3rem;
+}
+
+.input-hours,
+.input-minutes {
+  height: 3rem;
+  font-size: 2rem;
+  width: 10.25rem;
+}

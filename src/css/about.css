@@ -1,0 +1,11 @@
+.about-feature {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-content {
+  margin: 0 auto;
+  font-size: 1.75rem;
+  padding: 1rem;
+}
