@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Image, Text } from 'react-native';
 
-import styles from './styles.js';
+import styles from './styles';
 
-const Logo = () => (
+export default () => (
   <View style={styles.container}>
-    <Image source={require('./img/logo.jpg')} />
-    <Text>Kitti - The Kids Activity Fun Timer</Text>
+    <Text style={styles.textHeader}>K I T T I</Text>
+    <Image resizeMode="contain" style={styles.image} source={require('./img/logo.jpg')} />
+    <Text style={styles.textSubtitle}>The kids activity fun timer</Text>
+    <Text style={styles.textSubtitle}>that helps your child understand and visualize time.</Text>
   </View>
 );
-
-export default Logo;
