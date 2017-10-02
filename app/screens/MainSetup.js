@@ -54,9 +54,7 @@ class  extends Component {
 
     return (
       <div className="Main">
-        <Header title={'Kitti - Settings'} />
         <div className="boxes">
-          <h4>Add up to three tasks, a reward and an activity by clicking on a box. Then set the timer and hit start.</h4>
           <div className="dash-boxes">
             <div>
               <CreateTasks tasks={tasks} />

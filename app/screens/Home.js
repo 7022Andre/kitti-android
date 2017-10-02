@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, StatusBar } from 'react-native';
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
 import { ClickButton } from '../components/Button';
 
 export default class Home extends Component {
-  handlePressGetStarted = () => {
-    console.log('Start pressed');
-  };
-
-  handlePressLearnMore = () => {
-    console.log('Learn more pressed');
+  static propTypes = {
+    navigation: PropTypes.object,
   };
 
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <Container>
         <StatusBar translucent={false} barStyle="light-content" />
@@ -21,12 +19,12 @@ export default class Home extends Component {
         <ClickButton
           title="GET STARTED"
           backgroundColor="white"
-          onPress={this.handlePressGetStarted}
+          onPress={() => navigate('MainSetup')}
         />
         <ClickButton
           title="Learn more about Kitti"
           backgroundColor="yellow"
-          onPress={this.handlePressLearnMore}
+          onPress={() => navigate('MainSetup')}
         />
       </Container>
     );
