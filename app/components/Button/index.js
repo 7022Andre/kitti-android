@@ -1,4 +1,4 @@
-import ClickButton from './ClickButton';
+import TapButton from './TapButton';
 import styles from './styles';
 
-export { ClickButton, styles };
+export { TapButton, styles };

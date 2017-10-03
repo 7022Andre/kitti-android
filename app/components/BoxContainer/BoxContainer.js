@@ -4,12 +4,10 @@ import { Box } from '../Box';
 
 import styles from './styles';
 
-const BoxContainer = () => (
+export default (props) => (
   <View style={styles.boxContainer}>
-    <Box />
+    <Box navigate={props.navigate}/>
     <Box />
     <Box />
   </View>
 );
-
-export default BoxContainer;

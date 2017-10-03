@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 import { Container } from '../components/Container';
 import { Logo } from '../components/Logo';
-import { ClickButton } from '../components/Button';
+import { TapButton } from '../components/Button';
 
 export default class Home extends Component {
   static propTypes = {
@@ -16,15 +16,15 @@ export default class Home extends Component {
       <Container>
         <StatusBar translucent={false} barStyle="light-content" />
         <Logo />
-        <ClickButton
+        <TapButton
           title="GET STARTED"
           backgroundColor="white"
           onPress={() => navigate('MainSetup')}
         />
-        <ClickButton
+        <TapButton
           title="Learn more about Kitti"
           backgroundColor="yellow"
-          onPress={() => navigate('MainSetup')}
+          onPress={() => navigate('SetGoal')}
         />
       </Container>
     );

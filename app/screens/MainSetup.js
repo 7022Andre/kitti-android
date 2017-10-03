@@ -6,22 +6,50 @@ import { BoxContainer } from '../components/BoxContainer';
 //import CreateTasks from './common/createTasks';
 //import SetTimer from './setTimer';
 
-
 export default class MainSetup extends Component {
-/*
-  handlePressGetStarted = () => {
-    console.log('Start pressed');
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      tasks: {
+        task1: {
+          caption: '',
+          display_src: '',
+          active: false,
+        },
+        task2: {
+          caption: '',
+          display_src: '',
+          active: false,
+        },
+        task3: {
+          caption: '',
+          display_src: '',
+          active: false,
+        },
+      },
+      reward: {
+        caption: '',
+        display_src: '',
+        active: false,
+      },
+      activity: {
+        caption: '',
+        display_src: '',
+        active: false,
+      },
+      time: {
+        hours: 0,
+        minutes: 0,
+      },
+    };
+  }
 
-  handlePressLearnMore = () => {
-    console.log('Learn more pressed');
-  };
-*/
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <Container>
         <StatusBar translucent={false} barStyle="light-content" />
-        <BoxContainer />
+        <BoxContainer navigate={navigate} />
 
       </Container>
     );
